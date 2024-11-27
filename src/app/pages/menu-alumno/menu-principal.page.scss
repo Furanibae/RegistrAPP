@@ -1,0 +1,72 @@
+
+.botonesperfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    color: #F2A516; 
+  }
+
+ion-button{
+    margin-bottom: 10px;
+     
+} 
+
+.menuPrincipal{
+  --ion-background-color: #FFFFFF;
+}  
+
+.ion-text-left{
+  padding-left: 10%;
+  padding-top: 6%;
+}
+
+.content-wrapper{
+  border-radius: 20px 20px 0 0; /* Adjust values as needed */
+  overflow: hidden; 
+}
+  
+.forma-fondo{
+  position: absolute;
+  background-color: #001B35;
+
+  margin-top: 21%;
+  border-radius: 6vh 6vh 0vh 0vh;
+  padding-bottom: 19vh;
+}
+
+.nombreUser{
+  font-weight: bold;
+}
+
+p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 15%;
+  padding-bottom: 2%;
+  font-size: 1.3rem;
+}
+
+.iconoRev{
+  margin-left: 10%;
+}
+
+.iconoReg{
+  margin-left: 3%;
+}
+
+
+ion-button{
+  padding-right: 20px;
+  width: 30%;
+  height:80px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.75rem;
+}
+
+ion-row{
+  text-transform:initial;
+}

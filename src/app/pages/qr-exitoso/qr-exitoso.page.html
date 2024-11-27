@@ -1,0 +1,18 @@
+<ion-content [fullscreen]="true">
+    <div class="exitocontainer">
+      <div class="exito">
+        <img src="../../../assets/imgs/check.png" alt="checkqr">
+        <h3>¡Asistencia registrada!</h3>
+        <div *ngIf="asistenciaData">
+            <p><strong>Nombre del alumno:</strong> {{ asistenciaData.NombreAlumno }}</p>
+            <p><strong>Profesor:</strong> {{ asistenciaData.Profesor }}</p>
+            <p><strong>Sección:</strong> {{ asistenciaData.SeccionAsignatura }}</p>
+            <p><strong>Sigla:</strong> {{ asistenciaData.SiglaAsignatura }}</p>
+          </div>
+          <div *ngIf="!asistenciaData">
+            <p>No se encontraron datos de asistencia.</p>
+          </div>
+          <ion-button (click)="navigateToMenuPrincipal()">Volver a inicio</ion-button>
+      </div>
+    </div>
+  </ion-content>

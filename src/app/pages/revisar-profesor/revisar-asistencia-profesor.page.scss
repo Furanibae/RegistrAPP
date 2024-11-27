@@ -1,0 +1,25 @@
+ion-content {
+    --ion-background-color: #2D2D2D; }
+
+
+ion-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10; /* Asegura que esté por encima del contenido */
+  }
+  
+ion-card {
+    background-color: #001B35; /* Fondo oscuro */
+    color: #F2A516; /* Color de texto */
+}
+  
+ion-card ion-card-subtitle,
+ion-card ion-card-content p {
+   color: #F2A516; /* Color de subtítulos y párrafos */
+   margin-left: 20%; /* Margen a la izquierda para los subtítulos y párrafos */
+}
+.fondocard{
+    --background:#001B35;
+    
+}    

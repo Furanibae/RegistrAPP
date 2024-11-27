@@ -1,0 +1,179 @@
+/*Proyecto Registrapp
+Alumnos:-Francisca Aros
+        -Nicolás Soto
+
+Sección 011-D        
+*/
+
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+/*__________________________Font Family________________________________*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*-------------------------------------------------------------------------------------------*/
+h2{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.logo{
+  padding-top:30%;
+  padding-bottom: 15%;
+  width: 80%;
+}
+
+.containergeneral{
+  width: 100%;
+  text-align: center;
+}
+
+.fondoinicio{
+  background: rgb(242,165,22);
+  background: linear-gradient(277deg, rgba(242,165,22,1) 0%, rgba(77,71,43,1) 35%, rgba(0,27,53,1) 91%);
+  width: 100%;
+  height: 100%;
+}
+
+.flechaback{
+  padding: 12px 10px 0px 10px;
+}
+
+.titulo{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.titulo-h3{
+  color: #f2a516;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.fotoperfil{
+  border-radius: 50%;
+  position: absolute;
+  width: 130px;
+  height: 130px;  
+  transform: translateY(-50%);
+  margin-left: 32%;
+
+}
+
+.fondoitem{
+  --padding-start: 0px;
+  --inner-padding-end: 0px;
+  --border-radius: 10px;
+  --color:#000000;
+}
+
+
+.input-wrapper.sc-ion-input-md{
+  --background:#FFFFFF;
+  -webkit-margin-start: 10%;
+  -webkit-margin-end:10%;
+}
+
+
+
+/*HEADERS--------------------------------------------------------------*/
+.header-row {
+  justify-content: center;
+  display: flex;
+  background: #001B35
+}
+
+.titulo {
+  color: #f2a516;
+}  
+
+/*COMPONENT*/
+.tabs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/*BTN------------------------ */
+.regbtn{
+  --background: #f2a516;
+  margin-top: 3%;
+  margin-left: 15%;
+  text-align: center;
+  font-size: 0.7rem;
+  width: 40%;
+
+}
+
+.row-btn{
+  padding: 30% 30% 30% 30%;
+}
+
+/*---------------Inicio--------------*/
+.Bienvenida{
+  text-align: center;
+  color: #000;
+  margin-top: 8%;
+}
+
+.saludo{
+  padding-left: 1%;
+  width: 8%;
+}
+
+/*/ACORDEONES REGISTRAR /REVISAR/ */
+
+.asignaturas-header {
+  background-color: #F2A516;
+  --ion-item-background: #F2A516; 
+  color: #001B35; 
+}
+
+.asignaturas-header ion-label {
+  color: #001B35;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal; 
+}
+
+.letrasAcordion{
+  --background: #001B35;
+  color: #F2A516;
+}
+
+/*FOOTER*/
+
+ion-toolbar{
+  --background: #F2A516;
+  --ion-text-color: #001B35;
+}

@@ -1,0 +1,60 @@
+<ion-content class="menuPrincipal" [fullscreen]="true">
+  <ion-header>
+    <ion-grid class="header-row">
+      <ion-row>
+        <h3 class="titulo-h3"><ion-icon name="school-outline"></ion-icon>  DOCENTE DUOC</h3>
+      </ion-row>
+      </ion-grid>
+  </ion-header>
+
+  <div class="Bienvenida ion-text-left"><h2>Bienvenido/a <img class="saludo" src="../../../assets/imgs/saludo.png" alt="saludines"><br> <span class="nombreUser">{{ username }}</span></h2></div>
+<div class="forma-fondo">
+  <div class="contenedorfotope">
+    <img class="fotoperfil" src="../../../assets/imgs/kojima.png" alt="Foto de perfil">
+  </div>
+
+  <div class="botonesperfil">
+  <p class="">¿Que deseas hacer?</p>
+  <ion-grid>
+  <ion-row>
+  <ion-button class="warning regbtn" (click)="navigateToRegistrarProfesor()">
+    <ion-row>
+    <img src="../../../assets/imgs/regasist1.png" class="iconoReg" alt="registroProfe" width="100%">
+    Registrar Asistencia 
+    </ion-row>
+  </ion-button>
+
+  <ion-button class="warning regbtn" (click)="navigateToRevisarProfesor()">
+    <ion-row class="row-btn">
+    <img src="../../../assets/imgs/revasist1.png" class="iconoRev" alt="revisionAlumno" width="80%">
+    Revisar <br>Asistencia
+    </ion-row>
+    </ion-button>
+  </ion-row> 
+</ion-grid>
+  </div>
+</div>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar class="toolbar">
+    <ion-grid>
+      <ion-row class="ion-justify-content-around">
+
+        <ion-col class="ion-text-center">
+          <ion-icon name="person-circle-outline" size="large" (click)="navigateToPerfil()"></ion-icon>
+        </ion-col>
+
+
+        <ion-col class="ion-text-center">
+          <ion-icon name="home-outline" size="large" (click)="navigateToHome()"></ion-icon>
+</ion-col>
+
+
+        <ion-col class="ion-text-center">
+          <ion-icon name="log-out-outline" size="large" (click)="logout()"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

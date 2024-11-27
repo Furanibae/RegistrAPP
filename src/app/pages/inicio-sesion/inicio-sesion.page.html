@@ -1,0 +1,27 @@
+<ion-content [fullscreen]="true">
+  <ion-grid class="fondoinicio">
+    <div class="containergeneral">
+
+      <img src="../../../assets/imgs/registrapplogo.png" class="logo ion-justify-content-center" alt="logo"> 
+
+      <ion-input [(ngModel)]="email" label="Correo" label-placement="floating" fill="solid" type="email" placeholder="email@Duocuc.cl">
+      </ion-input>
+
+      <ion-input [(ngModel)]="password" label="Contraseña" label-placement="floating" fill="solid" type="password">
+      </ion-input>
+
+      <div class="center-container">
+        <ion-button class="botonMenu" color="warning" (click)="login()">
+          Iniciar Sesión
+        </ion-button>
+        <a href="https://ssoprd.duoc.cl/auth/realms/WEB_APPS_PRD/login-actions/reset-credentials?client_id=411f013c&tab_id=1CEOILSJjmA" target="_blank" rel="noopener noreferrer">
+          ¿Olvidaste tu contraseña?
+        </a>
+      </div>
+    
+    </div>
+  </ion-grid>
+</ion-content>
+
+
+

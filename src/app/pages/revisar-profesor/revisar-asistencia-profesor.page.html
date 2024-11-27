@@ -1,0 +1,84 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-grid class="header-row">
+      <ion-row>
+        <ion-icon
+          name="arrow-back-outline"
+          size="large"
+          class="flechaback"
+          (click)="goBack()">
+        </ion-icon>
+        <h3 class="titulo">
+          <ion-icon name="calendar-clear-outline"></ion-icon>
+          REVISAR ASISTENCIA
+        </h3>
+      </ion-row>
+    </ion-grid>
+  </ion-header>
+
+  <ion-list>
+    <ion-item slot="header" class="asignaturas-header">
+      <ion-label>Asignaturas</ion-label>
+    </ion-item>
+
+    <!-- Iterar sobre las asignaturas (claves del objeto asistencias) -->
+    <ion-list *ngFor="let sigla of getSiglas()" class="letrasAcordion">
+      <ion-item class="letrasAcordion">
+        <ion-label>{{ sigla }}</ion-label>
+        <ion-icon
+          name="chevron-down-outline"
+          slot="end"
+          (click)="toggleAsignatura(sigla)">
+        </ion-icon>
+      </ion-item>
+
+      <!-- Mostrar asistencias asociadas a la sigla -->
+      <ion-card class="fondocard" *ngIf="asistenciaVisible[sigla]">
+        <ion-card-header>
+          <ion-card-title>Asistencias</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item *ngFor="let asistencia of asistencias[sigla]">
+              <ion-label>
+                <h2 class="textoCard">Alumno: {{ asistencia.NombreAlumno }}</h2>
+                <p class="textoCard">Sección: {{ asistencia.SeccionAsignatura }}</p>
+                <p class="textoCard">{{ asistencia.Fecha }}</p>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </ion-list>
+
+  <ion-footer>
+    <ion-toolbar class="toolbar">
+      <ion-grid>
+        <ion-row class="ion-justify-content-around">
+          <ion-col class="ion-text-center">
+            <ion-icon
+              name="person-circle-outline"
+              size="large"
+              (click)="navigateToPerfil()">
+            </ion-icon>
+          </ion-col>
+          <ion-col class="ion-text-center">
+            <ion-icon
+              name="home-outline"
+              size="large"
+              (click)="navigateToHome()">
+            </ion-icon>
+          </ion-col>
+          <ion-col class="ion-text-center">
+            <ion-icon
+              name="log-out-outline"
+              size="large"
+              (click)="logout()">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

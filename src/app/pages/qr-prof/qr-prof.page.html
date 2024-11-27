@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+      <ion-row>
+        <ion-icon name="arrow-back-outline" size="large" class="flechaback" (click)="goBack()"></ion-icon>
+        <h3 class="titulo">
+          <ion-icon name="qr-code-outline"></ion-icon>  
+          GENERAR QR
+        </h3>
+      </ion-row>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+      <p>
+        <ion-icon name="information-circle-outline"></ion-icon> 
+        Debes mostrar este código QR 
+        <br>a tus alumnos para registrar la asistencia 
+      </p>    
+    </ion-row>
+
+    <ion-row *ngIf="qrCodeUrl">
+      <img [src]="qrCodeUrl" alt="Código QR" />
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar class="toolbar">
+    <ion-grid>
+      <ion-row class="ion-justify-content-around">
+
+        <ion-col class="ion-text-center">
+          <ion-icon name="person-circle-outline" size="large" (click)="navigateToPerfil()"></ion-icon>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <ion-icon name="home-outline" size="large" (click)="navigateToHome()"></ion-icon>
+</ion-col>
+
+        <ion-col class="ion-text-center">
+          <ion-icon name="log-out-outline" size="large" (click)="logout()"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

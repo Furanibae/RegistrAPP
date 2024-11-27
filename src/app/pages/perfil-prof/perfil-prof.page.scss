@@ -1,0 +1,45 @@
+.negrita {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.fotoperfilP{
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+ion-content {
+  --background: #ffffff;
+}
+
+
+
+
+/*CARD-------------------------------------------------------------------------*/
+
+ion-card:first-of-type {
+  background-color: #001B35; 
+  color: #F2A516;
+}
+
+ion-card:first-of-type ion-card-subtitle,
+ion-card:first-of-type ion-card-content p {
+  color: #F2A516; 
+  margin-left: 20%;
+}
+
+
+
+ion-card:last-of-type {
+  background-color:#F2A516 ; 
+  color: #001B35;
+}
+
+ion-card:last-of-type  ion-card-subtitle,
+ion-card:last-of-type  ion-card-content p {
+  color: #001B35; 
+}
